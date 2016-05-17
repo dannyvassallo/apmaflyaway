@@ -27,7 +27,13 @@
   <body class="<%= page_classes %>">
     <main>
       <!-- CONTENT SHOWS HERE -->
+      <a href="#" class="fixed-btn" target="_blank">
+        <h5>VOTE FOR THE APMAS HERE</h5>
+      </a>
       <%= yield %>
+      <div class="apmabadge">
+        <a href="#" target="_blank"><img class="full-w" src="https://s3.amazonaws.com/myfangate.com/fearlessapmas2016/apmasbadge.png"></a>
+      </div>
     </main>
     <%= partial 'layouts/partials/footer' %>
     <%= javascript_include_tag :all %>
