@@ -2,4 +2,8 @@
 
 // Init side nav
 $(".button-collapse").sideNav();
-// Init sticky footer
+
+$(function(){
+  $('.parallax').parallax();
+});
+
