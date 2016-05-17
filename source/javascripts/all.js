@@ -9,4 +9,5 @@
 //= require _init-materialize
 //= require _removeshadow
 //= require _social-wall
+//= require vendor/_validate
 //= require _custom
