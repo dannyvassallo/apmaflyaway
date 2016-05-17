@@ -6,16 +6,13 @@
 }
 
 .parallax-container{
+  height: 650px;
   .valign{
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999999;
+    position: relative;
   }
-}
-
-.apmalogo{
-  z-index: 999999;
-  position: relative;
-  margin-top: 45px;
-  margin-bottom: 45px;
 }
 
 .full-w{
