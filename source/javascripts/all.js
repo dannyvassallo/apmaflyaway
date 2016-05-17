@@ -5,4 +5,5 @@
 //= require _init-instafeed
 //= require materialize-sprockets
 //= require _init-materialize
+//= require _removeshadow
 //= require _custom
