@@ -1,9 +1,12 @@
 //= require jquery
-//= require vendor/masonry.pkgd.min
+//= require vendor/_masonry.pkgd.min
+//= require vendor/_jquery.social.stream.1.5.9.min
+//= require vendor/_jquery.social.stream.wall.1.6
 //= require _init-masonry
-//= require vendor/instafeed
+//= require vendor/_instafeed
 //= require _init-instafeed
 //= require materialize-sprockets
 //= require _init-materialize
 //= require _removeshadow
+//= require _social-wall
 //= require _custom

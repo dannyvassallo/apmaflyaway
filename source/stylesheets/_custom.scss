@@ -1,8 +1,29 @@
 $apmared: #EE1C24;
+$gold: #F0BD1B;
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Work Sans', sans-serif;
   font-weight: 900;
+}
+
+.no-margin{
+  margin: 0 auto !important;
+}
+
+.header-emblem{
+  width: 100px !important;
+  height: 100px !important;
+  cursor: default;
+  margin-bottom: 20px;
+  background-color: $apmared;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  i{
+    font-size: 30px;
+    line-height: 100px !important;
+    color: white;
+  }
 }
 
 .fearless-header {
@@ -83,4 +104,46 @@ h1,h2,h3,h4,h5,h6{
   .fearless-header{
     font-size: 33px !important;
   }
+  .parallax{
+    display: none;
+  }
+  .parallax-container{
+    background-image: url('https://s3.amazonaws.com/myfangate.com/fearlessapmas2016/stagecompressed.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.chevron{
+  background-color: white;
+}
+
+.section-divider{
+  position: relative;
+  margin-bottom: 40px;
+  hr{
+    max-width: 800px;
+  }
+  .chevron{
+    position: absolute;
+    top: -9px;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+  }
+}
+
+#hidden_iframe{
+  display: none;
+}
+
+.gold{
+  background-color: $gold !important;
+  i{
+    color: black !important;
+  }
+}
+
+.margin-top{
+  margin-top: 5%;
 }
