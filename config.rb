@@ -1,7 +1,7 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
-# activate :php
+activate :php
 # activate :dotenv
 
 # Per-page layout changes:
@@ -29,8 +29,6 @@ set :fonts_dir,  'fonts-folder'
 configure :development do
   # activate :livereload
   # set :debug_assets, true
-  # activate :minify_css
-  # activate :minify_html
 end
 
 ###

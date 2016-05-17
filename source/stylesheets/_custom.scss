@@ -1,1 +1,250 @@
-// PUT CUSTOM SCSS / SASS HERE
+$apmared: #EE1C24;
+$gold: #F0BD1B;
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+}
+
+.no-margin{
+  margin: 0 auto !important;
+}
+
+.header-emblem{
+  width: 100px !important;
+  height: 100px !important;
+  cursor: default;
+  margin-bottom: 20px;
+  background-color: $apmared;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  i{
+    font-size: 30px;
+    line-height: 100px !important;
+    color: white;
+  }
+}
+
+.fearless-header {
+    color: $apmared;
+    text-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+}
+
+.parallax-container{
+  height: 650px;
+  .valign{
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999999;
+    position: relative;
+  }
+}
+
+.likes{
+  position: absolute;
+  bottom: 29px;
+  right: 20px;
+}
+
+.apmalogo{
+  max-width: 640px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.full-w{
+  width: 100%;
+}
+
+.new{
+  background-color: $apmared !important;
+  &:after{
+    display: none;
+  }
+}
+
+.gradient-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: rgb(84,10,11); /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgba(84,10,11,1) 0%, rgba(238,27,36,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgba(84,10,11,1) 0%,rgba(238,27,36,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba(84,10,11,1) 0%,rgba(238,27,36,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#540a0b', endColorstr='#ee1b24',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  z-index: 0;
+}
+
+.header{
+  &:after{
+    content: '';
+    width: 100%;
+    height: 75px;
+    background-image: url('https://s3.amazonaws.com/myfangate.com/fearlessapmas2016/tornpaper.png');
+    position: absolute;
+    margin-top: -70px;
+    z-index: 99999999999;
+  }
+}
+
+.shadowed {
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+}
+
+@media (max-width: 640px){
+  .fearless-header{
+    font-size: 33px !important;
+  }
+  .parallax{
+    display: none;
+  }
+  .parallax-container{
+    background-image: url('https://s3.amazonaws.com/myfangate.com/fearlessapmas2016/stagecompressed.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.chevron{
+  background-color: white;
+}
+
+.section-divider{
+  position: relative;
+  margin-bottom: 40px;
+  hr{
+    max-width: 800px;
+  }
+  .chevron{
+    position: absolute;
+    top: -9px;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+  }
+}
+
+#hidden_iframe{
+  display: none;
+}
+
+.gold{
+  background-color: $gold !important;
+  i{
+    color: black !important;
+  }
+}
+
+.apmared{
+  background-color: $apmared !important;
+}
+
+.margin-top{
+  margin-top: 5%;
+}
+
+/* label color */
+ .input-field label {
+   color: black;
+ }
+ /* label focus color */
+ .input-field input:not([type]):focus + label , .input-field input[type=email]:focus + label {
+   color: black;
+ }
+ /* label underline focus color */
+ .input-field input:not([type]):focus , .input-field input[type=email]:focus {
+   border-bottom: 1px solid black;
+   box-shadow: 0 1px 0 0 black;
+ }
+ /* valid color */
+ .input-field input:not([type]).valid, .input-field input[type=email].valid {
+   border-bottom: 1px solid black;
+   box-shadow: 0 1px 0 0 black;
+ }
+ /* invalid color */
+ .input-field input:not([type]).invalid , .input-field input[type=email].invalid {
+   border-bottom: 1px solid black;
+   box-shadow: 0 1px 0 0 black;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: black !important;
+ }
+
+
+input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: black;
+}
+
+
+input{
+  color: black;
+}
+
+input[type="email"], input:not([type]), input[type="text"]{
+  border-bottom: 1px solid black;
+}
+
+input[type="checkbox"].filled-in:checked+label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    background-color: white;
+    z-index: 0;
+}
+
+input[type="checkbox"].filled-in:checked+label:before {
+    top: 0;
+    left: 1px;
+    width: 8px;
+    height: 13px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #e93535;
+    border-bottom: 2px solid #e93535;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+input[type="checkbox"].filled-in:not(:checked)+label:after {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid black !important;
+    top: 0px;
+    z-index: 0;
+}
+
+span.error{
+  display: none !important;
+}
+
+div.toast.red{
+  z-index: 99999999999999999999999 !important;
+  position: relative;
+}
+
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+
+#entry{
+  border: 1px solid black;
+  padding-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
