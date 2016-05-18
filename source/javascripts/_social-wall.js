@@ -2,10 +2,10 @@ $(document).ready(function($){
     $('#social-stream').dcSocialStream({
         feeds: {
             twitter: {
-                id: '#FEARLESSSUMMER, FEARLESSRECORDS'
+                id: '#FEARLESSATAPMAS, #FEARLESSRECORDS'
             },
             instagram: {
-                id: '#FEARLESSSUMMER, FEARLESSRECORDS',
+                id: '#FEARLESSATAPMAS, #FEARLESSRECORDS',
                 accessToken: '9803372.c8bdcae.5ad7b6d157ba409b82b52b3eef6f4ae4',
                 clientId: 'c8bdcae8e15f4c71a29ad59c7eab3fe7',
                 comments: 3,
@@ -47,6 +47,12 @@ $(function(){
         resizeStream();
         // console.log('firedfromcustom');
     }, 2000);
+
+    $("img").one("load", function() {
+        resizeStream();
+    }).each(function() {
+    if(this.complete) $(this).load();
+    });
 });
 
 $(window).resize(function(){
