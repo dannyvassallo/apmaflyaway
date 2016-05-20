@@ -7,7 +7,7 @@ function fixMasonryLayout(){
 var loadButton = document.getElementById('load-more');
 var feed = new Instafeed({
   get: 'tagged',
-  tagName: 'fearlessrecords',
+  tagName: 'fearlessatapmas',
   sortBy: 'most-liked',
   clientId: 'e614fac9466647bebb6a625d1d9c26e9',
   resolution: 'standard_resolution',

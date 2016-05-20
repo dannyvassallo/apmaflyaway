@@ -301,3 +301,11 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
     display: block;
   }
 }
+
+.more-info{
+  background-color: $apmared;
+  margin-bottom: 50px;
+  &:hover{
+    background-color: $apmared;
+  }
+}
