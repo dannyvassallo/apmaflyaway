@@ -309,3 +309,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
     background-color: $apmared;
   }
 }
+
+.fearless-header{
+  display: inline;
+}
