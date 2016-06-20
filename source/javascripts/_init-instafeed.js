@@ -1,7 +1,7 @@
-// function fixMasonryLayout(){
-//   $container.masonry('reloadItems');
-//   $container.masonry('layout');
-// }
+function fixMasonryLayout(){
+  $container.masonry('reloadItems');
+  $container.masonry('layout');
+}
 
 // // grab out load more button
 // var loadButton = document.getElementById('load-more');
@@ -22,13 +22,22 @@
 //       loadButton.setAttribute('disabled', 'disabled');
 //     }
 
-//     //Fix masonry layout on row load
-//     $("img").one("load", function() {
-//       fixMasonryLayout();
-//     }).each(function() {
-//     if(this.complete) $(this).load();
-//     });
+    //Fix masonry layout on row load
+    $("iframe").on("load", function() {
+      fixMasonryLayout();
+    }).each(function() {
+      if(this.complete) $(this).load();
+    });
 
+
+    var fixMasonryLayoutInterval = setInterval(function(){
+      fixMasonryLayout();
+    }, 100);
+
+    setTimeout(function(){
+      clearInterval(fixMasonryLayoutInterval);
+      // console.log('cleared');
+    }, 20000);
 //   },
 // });
 

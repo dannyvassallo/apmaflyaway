@@ -67,6 +67,9 @@ $("#entry").validate({
         }
       },
       email: true
+    },
+    'entry.146287273': {
+      minlength: 1
     }
   },
   messages: {
@@ -80,6 +83,10 @@ $("#entry").validate({
     'entry.62939456': {
       required: "Please give your e-mail address.",
       email: "Please give a valid e-mail address."
+    },
+    // vote
+    'entry.146287273': {
+      minlength: "Please select a user to vote for.",
     }
   },
   invalidHandler: function(form, validator) {
